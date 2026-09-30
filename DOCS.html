@@ -8,7 +8,7 @@
 <h1>scappi-x-studios</h1>
 
 <h2>What this folder does</h2>
-<p>A one-page GitHub Pages site for the studio, served at <code>https://scappidoo.github.io/scappi-x-studios/</code>. It says who Scappi X Studios is and sends readers to the real site at <code>https://vanillax.pages.dev</code>. Its job is discoverability: a second, fast-to-index address that repeats the canonical VanillaX sentence and links both ways with the main site. It uses the same design as the main site.</p>
+<p>A one-page GitHub Pages site for the studio, served at <code>https://scappidoo.github.io/scappi-x-studios/</code>. It says who Scappi X Studios is and sends readers to the real site at <code>https://scappixstudios.com</code>. Its job is discoverability: a second, fast-to-index address that repeats the canonical VanillaX sentence and links both ways with the main site. It uses the same design as the main site.</p>
 
 <h2>Files</h2>
 <table>
@@ -21,7 +21,7 @@
 
 <h2>Non-obvious logic</h2>
 <dl>
-<dt>Organization uses the main site's id</dt><dd>The JSON-LD Organization has <code>@id</code> <code>https://vanillax.pages.dev/#org</code>, the same id as on the main site, so search engines treat both pages as describing one company. This page's URL is listed in its <code>sameAs</code>, and the main site lists it back.</dd>
+<dt>Organization uses the main site's id</dt><dd>The JSON-LD Organization has <code>@id</code> <code>https://scappixstudios.com/#org</code>, the same id as on the main site, so search engines treat both pages as describing one company. This page's URL is listed in its <code>sameAs</code>, and the main site lists it back.</dd>
 <dt>No JavaScript</dt><dd>The main site's nav script needs the account API, so it is left out. All links to the main site are absolute.</dd>
 <dt>Own canonical</dt><dd>The page is a studio page with its own text, not a copy of a main-site page, so it is canonical to itself.</dd>
 </dl>
