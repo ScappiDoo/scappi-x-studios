@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>scappi-x-studios - DOCS</title>
+</head>
+<body>
+<h1>scappi-x-studios</h1>
+
+<h2>What this folder does</h2>
+<p>A one-page GitHub Pages site for the studio, served at <code>https://scappidoo.github.io/scappi-x-studios/</code>. It says who Scappi X Studios is and sends readers to the real site at <code>https://vanillax.pages.dev</code>. Its job is discoverability: a second, fast-to-index address that repeats the canonical VanillaX sentence and links both ways with the main site. It uses the same design as the main site.</p>
+
+<h2>Files</h2>
+<table>
+<tr><th>File</th><th>Role</th></tr>
+<tr><td><code>index.html</code></td><td>The whole page: head tags with WebPage and Organization JSON-LD, header, hero, what the studio makes, who makes it, a note on the names, download box, footer.</td></tr>
+<tr><td><code>styles.css</code></td><td>Copy of the main site's stylesheet. Update it from <code>ScappiClient/website/styles.css</code> when the design changes.</td></tr>
+<tr><td><code>assets/</code></td><td>The three fonts and the two images the page uses (hero background, Aurora cape).</td></tr>
+<tr><td><code>favicon.svg</code>, <code>og.png</code></td><td>Copies of the main site's icon and share image.</td></tr>
+</table>
+
+<h2>Non-obvious logic</h2>
+<dl>
+<dt>Organization uses the main site's id</dt><dd>The JSON-LD Organization has <code>@id</code> <code>https://vanillax.pages.dev/#org</code>, the same id as on the main site, so search engines treat both pages as describing one company. This page's URL is listed in its <code>sameAs</code>, and the main site lists it back.</dd>
+<dt>No JavaScript</dt><dd>The main site's nav script needs the account API, so it is left out. All links to the main site are absolute.</dd>
+<dt>Own canonical</dt><dd>The page is a studio page with its own text, not a copy of a main-site page, so it is canonical to itself.</dd>
+</dl>
+
+<h2>Gotchas and invariants</h2>
+<ul>
+<li>The first sentence about VanillaX must be the canonical sentence from the brand repo (<code>ScappiDoo/scappitrade-plg</code>, <code>brand/VANILLAX_ENTITY.md</code>). Never paraphrase it.</li>
+<li>Write the names exactly: VanillaX, Scappi X Studios (three words), GeopolX (a server, not a plugin).</li>
+<li>The address must keep the trailing slash in every link, because GitHub Pages serves the folder.</li>
+</ul>
+
+<footer>Last updated 2026-09-30 &middot; Site created.</footer>
+</body>
+</html>
